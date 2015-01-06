@@ -1,0 +1,11 @@
+﻿<div>
+    <h2>{{repo.name}}</h2>
+    <p>Issues: {{repo.open_issues_count}}</p>
+    <ul>
+        <li ng-repeat="user in contributors">
+            <img ng-src="{{user.avatar_url}}" title="{{user.login}}" />
+            <span>&nbsp;&nbsp;&nbsp;</span>
+            <span>{{user.login}}</span>
+        </li>
+    </ul>
+</div>
